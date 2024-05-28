@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Dodaj Przepis</title>
+</head>
+<body>
+    <div class="form-container">
+        <h2>Dodaj Przepis</h2>
+        <form action="add_product.php" method="post" enctype="multipart/form-data">
+            <label for="name">Nazwa Przepisu</label>
+            <input type="text" id="name" name="name" required>
+
+            <label for="description">Opis Przepisu</label>
+            <textarea id="description" name="description" rows="4" required></textarea>
+
+            <label for="image">Zdjęcie Przepisu</label>
+            <input type="file" id="image" name="image" required>
+
+            <button type="submit">Dodaj Przepis</button>
+        </form>
+    </div>
+</body>
+</html>
